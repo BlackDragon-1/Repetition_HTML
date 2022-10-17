@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Szybka ściąga z HTML i CSS</h1>
+     <p>"ściąga jest sporządzana w trakcie mojej nauki, nazewnictwo nie zawsze jest "literaturowe", ma  za zadanie lepsze zapamiętanie</p>
+     <!-- <p>zebrane informacje z dotychczasowej wiedzy w jednym miejscu</p> -->
+    
+     <main>
+        <header>
+            <ul>
+                <li>znaczniki</li>
+                <li>hiperłącza</li>
+                <li>obrazki</li>
+                <li>table</li>
+                <li>kalsy i identyfikatory</li>
+            </ul>
+        </header>
+     </main>
+
+     <section>
+        <header>
+            <h2>znaczniki</h2>
+        </header>
+        <article>
+            <h3>podział znaczników</h3>
+            <p>w HTML posługujemy się znacznikami (lub inaczej tagami)</p>
+            <p>w CSS posługujemy się nazwą "selektory". Jest ono pojęciem szerszym, gdyż oprócz znanczników z HTML obejmują równiez klasy i identyfikatory</p>
+            <p>budowa znacznika: < tag   nazwa atrybutu="wartość atrybutu" >  opis znacznika < / tag></p>
+            <p>budowa selektora:  selektor {właściwość: wartość właściwości;}</p>
+            <p>Jest różny podział znaczników. Tutaj podzielimy je na:</p>
+            <ul>
+                <li> elementy liniowe - układają się obok siebie; domyślnie ustawione {display: inline}; zmiana paddingu i marginesu tylko na boki; elementy liniowe są w elementach blokowych
+                    <ol> 
+                        <li>puste znaczniki: czyli o "wzorze" < tag />: 
+                            <ul>
+                                <li>
+                                    meta col area br hr link input img
+                                </li>
+                            </ul> 
+                        </li>
+                        <li>znaczniki formatujące tekst: 
+                            <ul>
+                                <li>strong b sup sub</li>
+                                <li>cite code keyboard</li>
+                                <li>del u ins</li>
+                                <li>em i</li>
+                                <li>small</li>
+                            </ul>
+                        <li>inne:
+                            <ul>
+                                <li>a button</li>
+                                <li>audio video map svg</li>
+                                <li>textarea label select</li>
+                                <li>progress script iframe</li>
+                                <li>span</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li> elementy blokowe - układają się pod sobą, zajmują całą szerokość strony; zawsze są od nowej linii; w elementy blokowe zawierają elementy liniowe domyślnie {display: block;}; 
+                    <ol>
+                        <li>semantyczne
+                            <ul>
+                                <li>main header footer</li>
+                                <li>section article</li>
+                                <li>nav</li>
+                                <li>aside</li>
+                            </ul>
+                        </li>
+                        <li>nagłówki: 
+                            <ul>
+                                <li>
+                                    od H1 do H6
+                                </li>
+                            </ul>
+                        </li>
+                        <li>tabelowe:
+                            <ul>
+                                <li>table thead tbody</li>
+                                <li>th+tr  th+td dd+dt</li>
+                                <li>ul ol li</li>
+                            </ul>
+
+                        </li>
+                        <li>obrazkowe:
+                            <ul>
+                                <li>figure figcaption</li>
+                            </ul> 
+                        </li>
+                        <li>formularz
+                            <ul>
+                                <li>form</li>
+                                <li>fieldset</li>
+                            </ul>
+                        </li>
+                        <li>inne
+                            <ul>
+                                <li>div</li>
+                                <li>p</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+                <li>elementy liniowo-blokowe - zachowują się jak liniowe, ale można do nich dodawać pionowe marginesy:
+                    <ul>
+                        <li>img input button select textarea</li>
+                    </ul>
+                </li>
+            </ul>
+
+
+        </article>
+        <article>
+            <h3>różnice span, p i div</h3>
+            <ul>
+                <li>span
+                    <ul>
+                        <li>element liniowy</li>
+                        <li>do ostylowania</li>
+                        <li>nie jest semantyczny</li>
+                        <li>jak nie można użyć innego z tagów</li>
+                    </ul>
+                </li>p
+                    <ul>
+                        <li>element blokowy</li>
+                        <li>jest semantyczny(!), służy do wyodrębnienia zdań</li>
+                        <li>grupuje teksty w akapity</li>
+                        <li> można używać: < p > < span > tekst przykładowy</ span > < p > </li>
+                    </ul>
+                <li>div
+                    <ul>
+                        <li>element blokowy</li>
+                        <li>do ostylowania</li>
+                        <li>nie jest semantyczny</li>
+                        <li>jak nie można użyć innego z tagów</li>
+                    </ul>
+                </li>
+                <li></li>
+            </ul>
+            <p>czyli span i div do grupowania służą, nie mają wartości semantycznej. Span jest liniowy, div - blokowy</p>
+        </article>
+
+        
+    </section>
+    
+
+    <section>
+        <article>
+            <h2>Dodatkowe informacje</h2>
+            <section>
+            <p> button vs input: button mogę ostylować w środku, dodać img albo b</p>
+            </section>
+            <section>
+                &nbsp - czyli niełamliwa spacja do użycia: kwas + & nbsp +siarkowy 
+            </section>
+         
+        </article>
+    </section>
+    
+    
+   
+</body>
+</html>
