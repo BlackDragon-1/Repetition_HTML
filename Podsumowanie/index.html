@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
+
      <h1>Szybka ściąga z HTML i CSS</h1>
-     <p>"ściąga jest sporządzana w trakcie mojej nauki, nazewnictwo nie zawsze jest "literaturowe", ma  za zadanie lepsze zapamiętanie</p>
+     <p>"ściąga" jest sporządzana w trakcie powtórki, nazewnictwo nie zawsze jest "literaturowe" - ma  za zadanie lepsze zapamiętanie</p>
      <!-- <p>zebrane informacje z dotychczasowej wiedzy w jednym miejscu</p> -->
-    
      <main>
         <header>
             <ul>
@@ -22,7 +22,6 @@
             </ul>
         </header>
      </main>
-
      <section>
         <header>
             <h2>znaczniki</h2>
@@ -113,11 +112,9 @@
                     </ul>
                 </li>
             </ul>
-
-
         </article>
         <article>
-            <h3>różnice span, p i div</h3>
+            <h3 id="differences">różnice span, p i div</h3>
             <ul>
                 <li>span
                     <ul>
@@ -141,29 +138,66 @@
                         <li>jak nie można użyć innego z tagów</li>
                     </ul>
                 </li>
-                <li></li>
             </ul>
-            <p>czyli span i div do grupowania służą, nie mają wartości semantycznej. Span jest liniowy, div - blokowy</p>
-        </article>
-
-        
-    </section>
-    
-
+            <p>Czyli span i div służą do grupowania, nie mają wartości semantycznej. Span jest liniowy, div - blokowy</p>
+        </article>        
+    </section>   
     <section>
+        <h2>Dodatkowe informacje</h2>
         <article>
-            <h2>Dodatkowe informacje</h2>
             <section>
             <p> button vs input: button mogę ostylować w środku, dodać img albo b</p>
             </section>
             <section>
                 &nbsp - czyli niełamliwa spacja do użycia: kwas + & nbsp +siarkowy 
-            </section>
-         
+            </section>     
+        </article>
+    </section>   
+    <section>
+        <h2>Hiperłącza</h2>
+        <article>
+            <p>Linki służą do przeniesienia na zewnątrzne storny lub wewnątrz strony lub serwisu</p>
+            <ul>
+                <li>Na zewnątrz:
+                    <ol>
+                        <li>
+                            <p>
+                                Na inną stronę: < a href = " www.stronainternetowa.pl" > Wejdź na "www.stronainternetowa.pl" < /a >
+                            </p>
+                            <p>
+                                tak będzie wyglądał link: <a href="stronainternetowa.pl"> Wejdź na "www.stronainternetowa.pl"</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Przekieruje nas na skrzynkę mailową: < a href = " mailto:poczta@mail.pl" > przenieś mnie na skrzynkę < /a >
+                            </p>
+                            <p>
+                                tak będzie wyglądał link: <a href="mailto:poczta@mail.pl"> Wejdź na "poczta@mail.pl"</a>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li>Wewnątrz strony lub serwisu. Przenosi nas do konkretnego miejsca na stronie oznaczonego id, używamy tzw. kotwicy: "#"
+                    <ol>
+                        <li>
+                            <p>
+                                W przypadku id o nazwie "differences" przeniesie nas do tagu zonaczonego tym id <br>
+                                Kod będzie następujący: <code>< a href="#differences"> Różnice < /a></code> <br>
+                                Przejdź do artykułu gdzie są różnice między < span > a < p >: <a href="#differences"> Różnice </a><br>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Gdy chcemy przenieść się na samą górę dokumentu. Sama kotwica "#" <br>
+                                Kod będzie tak wyglądał: <code> < a href="#" >na samą górę dokumentu< /a></code> <br>
+                                Przejdź do listy elementów liniowych: <a href="#">Przejdź na samą górę dokumentu</a><br>
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
         </article>
     </section>
-    
-    
-   
 </body>
 </html>
